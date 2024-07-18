@@ -12,6 +12,15 @@ const ServicesContainer = styled.section`
     margin-bottom: 40px;
     color: #333;
   }
+
+  @media (max-width: 768px) {
+    padding: 40px 10px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  }
 `;
 
 const ServiceBox = styled(Link)`
@@ -42,12 +51,33 @@ const ServiceBox = styled(Link)`
     color: #666;
     line-height: 1.6;
   }
+
+  @media (max-width: 1024px) {
+    width: 45%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 10px 0;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 const ServiceIcon = styled.div`
   font-size: 3rem;
   margin-bottom: 20px;
   color: #00aaff;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Services = () => (
